@@ -25,7 +25,7 @@ scene.add(directionalLight);
 // Load GLB model
 const loader = new THREE.GLTFLoader();
 loader.load(
-  'models/car_model.glb', 
+  'car-viewer/models/car_model.glb', 
   function(gltf) {
     const model = gltf.scene;
     model.scale.set(1,1,1);
@@ -50,3 +50,4 @@ function animate() {
   renderer.render(scene, camera);
 }
 animate();
+
